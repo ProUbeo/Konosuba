@@ -14,10 +14,10 @@ const Discord = require('discord.js');
  
  bot.on("guildMemberAdd", member => {
     
-member.guild.channels.find("name", "entrer").send(`${member}, je te souhaite la bienvenue ! je suis 99648-HB4... Je rigole ! je suis Konosuba (bravo si t'a la référence). Pour avoir de l'aide, fait k!help`)
+member.guild.channels.find("name", "ecrit-nouveaux").send(`${member}, je te souhaite la bienvenue ! je suis 99648-HB4... Je rigole ! je suis Konosuba (bravo si t'a la référence). Pour avoir de l'aide, fait k!help`)
     })
     bot.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "entrer").send(`${member} N'a pas voulu rester... De son plein grée, je sais pas !`)
+    member.guild.channels.find("name", "ecrit-nouveaux").send(`${member} N'a pas voulu rester... De son plein grée, je sais pas !`)
     })
     
  
@@ -37,20 +37,12 @@ member.guild.channels.find("name", "entrer").send(`${member}, je te souhaite la 
          message.channel.send({embed});
      }
 
-     if(message.content === "k!carte <@418453389576503297>"){
- 
-         const embed = new Discord.RichEmbed()
-         .setTitle("commandes Disponible")
-         .setColor(0xD4FE00)
-         .setDescription("")
-         . setFooter ( "Konosuba ©" )
-         . addField ( "Carte D'identité",
-           "```Nom : Atsuki\nPrenom: Yuki\nCompétence : Mage```")
-                     
-                     
-         
-         
-         message.channel.send({embed});
+     
+}
+if(message.content.startsWith("rp!carte <@418453389576503297>")){
+    message.channel.send(`Nom : Atsuki\nPrenom : Yuki\n compétence : Mage`,{
+    file:"https://cdn.discordapp.com/attachments/455345835618730004/455360730061996053/Avatar_RP.png"
+})
 }
 }
 )
