@@ -29,9 +29,25 @@ member.guild.channels.find("name", "entrer").send(`${member}, je te souhaite la 
          .setTitle("commandes Disponible")
          .setColor(0xD4FE00)
          .setDescription("")
-         . setFooter ( "Konosuba" )
+         . setFooter ( "Konosuba ©" )
          . addField ( "Transition",
            "```help1.txt    _ ☐ X\n```" )
+         
+         
+         message.channel.send({embed});
+     }
+bot.on('message', message => {
+     if(message.content === "k!carte <@455361338127024130>"){
+ 
+         const embed = new Discord.RichEmbed()
+         .setTitle("commandes Disponible")
+         .setColor(0xD4FE00)
+         .setDescription("")
+         . setFooter ( "Konosuba ©" )
+         . addField ( "Carte D'identité",
+           "```Nom : Atsuki\nPrenom: Yuki\nCompétence : Mage```")
+                     
+                     
          
          
          message.channel.send({embed});
