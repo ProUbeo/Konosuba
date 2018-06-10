@@ -36,6 +36,7 @@ member.guild.channels.find("name", "entrer").send(`${member}, je te souhaite la 
          
          message.channel.send({embed});
      }
+     }
 bot.on('message', message => {
      if(message.content === "k!carte <@455361338127024130>"){
  
@@ -51,6 +52,6 @@ bot.on('message', message => {
          
          
          message.channel.send({embed});
-     }
+}
 }
 )
