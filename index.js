@@ -41,5 +41,9 @@ if(message.content.startsWith("k!carte <@418453389576503297>")){
     file:"https://cdn.discordapp.com/attachments/455345835618730004/455360730061996053/Avatar_RP.png"
 })
 }
+if(message.content.startsWith("k!carte <@323807479651631104>")){
+    message.channel.send(`index.js ne trouve pas la carte *internal.server.error`
+)
+}
 }
 )
