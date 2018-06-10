@@ -31,7 +31,7 @@ member.guild.channels.find("name", "ecrit-nouveaux").send(`${member}, je te souh
          .setDescription("")
          . setFooter ( "Konosuba ©" )
          . addField ( "Transition",
-           "```help1.txt    _ ☐ X\n```" )
+           "```help1.txt    _ ☐ X\nk!carte @*pseudo* pour que vous puissiez voir la carte d'identité de la personne que vous avez mentionner ^^```" )
          
          
          message.channel.send({embed});
