@@ -27,7 +27,7 @@ member.guild.channels.find("name", "ecrit-nouveaux").send(`${member}, je te souh
  
          const embed = new Discord.RichEmbed()
          .setTitle("commandes Disponible")
-         .setColor(ED7F10)
+         .setColor(0xD4FE00)
          .setDescription("")
          . setFooter ( "Konosuba ©" )
          . addField ( "Transition",
