@@ -36,7 +36,7 @@ member.guild.channels.find("name", "ecrit-nouveaux").send(`${member}, je te souh
          
          message.channel.send({embed});
      }
-if(message.content.startsWith("rp!carte <@418453389576503297>")){
+if(message.content.startsWith("k!carte <@418453389576503297>")){
     message.channel.send(`Nom : Atsuki\nPrenom : Yuki\n compétence : Mage`,{
     file:"https://cdn.discordapp.com/attachments/455345835618730004/455360730061996053/Avatar_RP.png"
 })
