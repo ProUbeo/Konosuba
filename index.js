@@ -37,7 +37,7 @@ member.guild.channels.find("name", "entrer").send(`${member}, je te souhaite la 
          message.channel.send({embed});
      }
 
-     if(message.content === "k!carte <@455361338127024130>"){
+     if(message.content === "k!carte <@418453389576503297>"){
  
          const embed = new Discord.RichEmbed()
          .setTitle("commandes Disponible")
