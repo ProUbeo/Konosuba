@@ -27,11 +27,11 @@ member.guild.channels.find("name", "ecrit-nouveaux").send(`${member}, je te souh
  
          const embed = new Discord.RichEmbed()
          .setTitle("commandes Disponible")
-         .setColor(0xD4FE00)
+         .setColor(ED7F10)
          .setDescription("")
          . setFooter ( "Konosuba ©" )
          . addField ( "Transition",
-           "```help1.txt    _ ☐ X\nk!carte @*pseudo* pour que vous puissiez voir la carte d'identité de la personne que vous avez mentionner ^^```" )
+           "```help1.txt    _ ☐ X\nk!carte @pseudo pour que vous puissiez voir la carte d'identité de la personne que vous avez mentionner ^^```" )
          
          
          message.channel.send({embed});
