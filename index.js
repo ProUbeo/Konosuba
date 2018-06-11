@@ -19,7 +19,10 @@ member.guild.channels.find("name", "ecrit-nouveaux").send(`${member}, je te souh
     bot.on("guildMemberRemove", member => {
     member.guild.channels.find("name", "ecrit-nouveaux").send(`${member} N'a pas voulu rester... De son plein grée, je sais pas !`)
     })
-    
+        bot.on("guildMemberAdd", member => {
+        var role = member.guild.roles.find('name', '1ere connexion');
+    member.addRole(role)
+    })
  
 
  bot.on('message', message => {
