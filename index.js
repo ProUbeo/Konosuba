@@ -45,5 +45,9 @@ if(message.content.startsWith("k!carte <@323807479651631104>")){
     message.channel.send(`index.js ne trouve pas la carte *internal.server.error`
 )
 }
+if(message.content.startsWith("k!carte <@455273029837127700>")){
+    message.channel.send(`It's me :3`
+)
+}
 }
 )
