@@ -30,7 +30,7 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
  
          const embed = new Discord.RichEmbed()
          .setTitle("commandes Disponible")
-         .setColor(0xD4FE00)
+         .setColor(0xff9900)
          .setDescription("")
          . setFooter ( "Konosuba ©" )
          . addField ( "Transition",
