@@ -39,6 +39,25 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
          
          message.channel.send({embed});
      }
+  if (message.content === "k!drink"){
+    random();
+    if (drink == 1){
+        message.channel.send(`**${message.author.username}** Boit !`, {
+            file: "https://78.media.tumblr.com/9ef91f397754dc901d99e60a85fa264e/tumblr_nsqpdy2AfR1s6sltno2_500.gif"
+        })
+}
+if (drink == 2){
+    message.channel.send(`**${message.author.username}** Boit !`, {
+        file: "http://mangapournous.m.a.pic.centerblog.net/745.gif"
+    })
+}
+if (drink == 3){
+    message.channel.send(`**${message.author.username}** Boit !`, {
+        file: "http://reve-of-manga.r.e.pic.centerblog.net/d3f76a2f.gif"
+    })
+}
+}
+
 if(message.content.startsWith("k!carte <@418453389576503297>")){
     message.channel.send(`Nom : Atsuki\nPrenom : Yuki\n compétence : Mage\nNiveau : 2\n**Déesse**`,{
     file:"https://cdn.discordapp.com/attachments/455345835618730004/455360730061996053/Avatar_RP.png"
@@ -82,11 +101,6 @@ if(message.content.startsWith("k!carte <@455273029837127700>")){
     file:"https://data.photofunky.net/output/image/6/8/0/3/680323/photofunky.gif"
 })
 } 
-if(message.content.startsWith("k!drink")){
-    message.channel.send(`**${message.author.username}** Boit !`,{
-    file:"https://78.media.tumblr.com/9ef91f397754dc901d99e60a85fa264e/tumblr_nsqpdy2AfR1s6sltno2_500.gif"
-})
-} 
 if(message.content.startsWith("k!sceptre")){
     message.channel.send(`**${message.author.username}** fait apparaître son Sceptre !`,{
     file:"https://i.skyrock.net/4010/71994010/pics/3154696378_1_6_CYLmvdbs.png"
@@ -114,3 +128,9 @@ if(message.content.startsWith("k!faux")){
 }
 }
 )
+
+function random(min, max) {
+    min = Math.ceil(0)
+    max = Math.floor(3)
+    drink = Math.floor(Math.random() * (max - min +1) + min);
+ }
