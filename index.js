@@ -40,7 +40,7 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
          message.channel.send({embed});
      }
 if(message.content.startsWith("k!carte <@418453389576503297>")){
-    message.channel.send(`Nom : Atsuki\nPrenom : Yuki\n compétence : Mage\nNiveau : 1\n**Déesse**`,{
+    message.channel.send(`Nom : Atsuki\nPrenom : Yuki\n compétence : Mage\nNiveau : 2\n**Déesse**`,{
     file:"https://cdn.discordapp.com/attachments/455345835618730004/455360730061996053/Avatar_RP.png"
 })
 }
