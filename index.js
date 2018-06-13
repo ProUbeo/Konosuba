@@ -49,6 +49,11 @@ if(message.content.startsWith("k!carte <@418453389576503297>")){
     file:"https://i.pinimg.com/originals/df/2a/4b/df2a4bfda87795de210038b89dc61636.png"
 })
 }
+if(message.content.startsWith("k!carte <@234368202379886593>")){
+    message.channel.send(`Nom : ...\nPrenom : Sakamoto\n compétence : Mage\nNiveau : 1`,{
+    file:"https://cdn.discordapp.com/attachments/439460582345670666/440153290211065856/nichijou__sakamoto_san_gijinka_by_lightanddarksoul-d3k4h0m.jpg"
+})
+}
 if(message.content.startsWith("k!carte <@402034671451373581>")){
     message.channel.send(`Nom : ...\nPrenom : Meliodas\n compétence : Mage\nNiveau : 1`,{
     file:"https://cdn.discordapp.com/attachments/455346698726801430/456486912354418698/697d5eb043077e75fd934c4b7ff36ca9.jpg"
