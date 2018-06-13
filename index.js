@@ -34,7 +34,7 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
          .setDescription("")
          . setFooter ( "Konosuba ©" )
          . addField ( "Transition",
-           "```help1.txt    _ ☐ X\nk!carte @pseudo pour que vous puissiez voir la carte d'identité de la personne que vous avez mentionner ^^\nk!(arme)```" )
+           "```help1.txt    _ ☐ X\nk!carte @pseudo pour que vous puissiez voir la carte d'identité de la personne que vous avez mentionner ^^\nk!(arme)\nk!sleep pour quand vous dormez\nk!eat quand vous mangez\nk!drink quand vous vous bourez la tronche```" )
          
          
          message.channel.send({embed});
@@ -42,6 +42,21 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
 if(message.content.startsWith("k!carte <@418453389576503297>")){
     message.channel.send(`Nom : Atsuki\nPrenom : Yuki\n compétence : Mage\nNiveau : 2\n**Déesse**`,{
     file:"https://cdn.discordapp.com/attachments/455345835618730004/455360730061996053/Avatar_RP.png"
+})
+}
+  if(message.content.startsWith("k!carte <@437883948694241290>")){
+    message.channel.send(`Nom : Bubu\nPrenom : Kurama\n compétence : Épéiste\nNiveau : 1`,{
+    file:"https://i.pinimg.com/originals/df/2a/4b/df2a4bfda87795de210038b89dc61636.png"
+})
+}
+if(message.content.startsWith("k!carte <@402034671451373581>")){
+    message.channel.send(`Nom : ...\nPrenom : Meliodas\n compétence : Mage\nNiveau : 1`,{
+    file:"https://cdn.discordapp.com/attachments/455346698726801430/456486912354418698/697d5eb043077e75fd934c4b7ff36ca9.jpg"
+})
+}
+if(message.content.startsWith("k!carte <@244812508865626113>")){
+    message.channel.send(`Nom : Shinata\nPrenom : Lillia\n compétence : Mage\nNiveau : 1`,{
+    file:"https://cdn.discordapp.com/attachments/455346698726801430/456491766317580299/tumblr_p53xvvkmGq1qjrzu8o1_1280.jpg"
 })
 }
 if(message.content.startsWith("k!carte <@323807479651631104>")){
@@ -57,9 +72,14 @@ if(message.content.startsWith("k!carte <@455273029837127700>")){
     file:"http://mangasetplus.m.a.pic.centerblog.net/16dca05f.jpg"
 })
 }
-   if(message.content.startsWith("k!eat")){
+ if(message.content.startsWith("k!eat")){
     message.channel.send(`**${message.author.username}** Mange !`,{
     file:"https://data.photofunky.net/output/image/6/8/0/3/680323/photofunky.gif"
+})
+} 
+if(message.content.startsWith("k!drink")){
+    message.channel.send(`**${message.author.username}** Boit !`,{
+    file:"https://78.media.tumblr.com/9ef91f397754dc901d99e60a85fa264e/tumblr_nsqpdy2AfR1s6sltno2_500.gif"
 })
 } 
 if(message.content.startsWith("k!sceptre")){
