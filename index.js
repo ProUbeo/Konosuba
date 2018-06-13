@@ -126,6 +126,11 @@ if(message.content.startsWith("k!faux")){
     file:"https://orig00.deviantart.net/8300/f/2007/171/b/e/katana_by_vyrosia.jpg"
 })
 }
+if(message.content.startsWith("k!carte <@195606060638142474>")){
+    message.channel.send(`Nom : OneShot\nPrenom : Miko\n compétence : Épéiste\nNiveau : 1`,{
+    file:"https://cdn.discordapp.com/attachments/455346698726801430/456517895153778688/JPEG_20180605_053757.jpg"
+})
+}
 }
 )
 
