@@ -43,7 +43,7 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
          . setFooter ( "Konosuba ©" )
          . addField ( "Transition",
            "```help1.txt    _ ☐ X\nk!carte @pseudo pour que vous puissiez voir la carte d'identité de la personne que vous avez mentionner ^^\nk!(arme)\nk!sleep pour quand vous dormez\nk!eat quand vous mangez\nk!drink quand vous vous bourez la tronche```" )
-         
+         .setThumbnail(message.author.avatarURL)
          
          message.channel.send({embed});
      }
