@@ -14,7 +14,7 @@ const Discord = require('discord.js');
  
  bot.on("guildMemberAdd", member => {
     
-member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te souhaite la bienvenue ! je suis 99648-HB4... Je rigole ! je suis Konosuba (bravo si t'a la référence). Pour commencer l'aventure, lisez dans #regles-et-informations !`)
+member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te souhaite la bienvenue ! je suis 99648-HB4... Je rigole ! je suis Konosuba (bravo si t'a la référence). Pour commencer l'aventure, lisez dans <#455345599429083146> !`)
     })
     bot.on("guildMemberRemove", member => {
     member.guild.channels.find("name", "discution-nouveaux").send(`${member} N'a pas voulu rester... De son plein grée, je sais pas !`)
