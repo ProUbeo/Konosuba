@@ -41,7 +41,7 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
          .setColor(0xff9900)
          .setDescription("")
          . setFooter ( "Konosuba ©" )
-         . addField ( "Transition",
+         . addField ( "commande demandé par (voir image)",
            "```help1.txt    _ ☐ X\nk!carte @pseudo pour que vous puissiez voir la carte d'identité de la personne que vous avez mentionner ^^\nk!(arme)\nk!sleep pour quand vous dormez\nk!eat quand vous mangez\nk!drink quand vous vous bourez la tronche```" )
          .setThumbnail(message.author.avatarURL)
          
