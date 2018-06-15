@@ -47,6 +47,28 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
          
          message.channel.send({embed});
      }
+  if(message.content === "serveur bonjour"){
+ 
+         const embed = new Discord.RichEmbed()
+         .setColor(0xff9900)
+         . setFooter ( "Konosuba ©" )
+         . addField ( "Serveur",
+           "Bien le bonjour ! Que voulez-vous ?" )
+         
+         
+         message.channel.send({embed});
+     }
+  if(message.content === "serveur être bourrée"){
+ 
+         const embed = new Discord.RichEmbed()
+         .setColor(0xff9900)
+         . setFooter ( "Konosuba ©" )
+         . addField ( "Serveur",
+           "Ehh... D'accord *sert un verre de bière a ${message.author.username}* voici ^^ " )
+         
+         
+         message.channel.send({embed});
+     }
   if (message.content === "k!drink"){
     random();
     if (drink == 1){
