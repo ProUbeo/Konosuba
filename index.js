@@ -86,7 +86,18 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
          .setColor(0xff9900)
          . setFooter ( "Konosuba ©" )
          . addField ( "Serveur",
-           `Faites attention mais je ne suis que un robot *sert un autre verre de bière a ${message.author.username}` )
+           `Faites attention mais je ne suis que un robot *sert un autre verre de bière a ${message.author.username}*` )
+         
+         
+         message.channel.send({embed});
+     }
+  if(message.content === "serveur ça va ?"){
+ 
+         const embed = new Discord.RichEmbed()
+         .setColor(0xff9900)
+         . setFooter ( "Konosuba ©" )
+         . addField ( "Serveur",
+           `Oh ! Ehh... Je m'y attendais pas que on me demande ça ! Je ne suis que un robot banal sans intérêt... Merci beaucoup ${message.author.username}` )
          
          
          message.channel.send({embed});
