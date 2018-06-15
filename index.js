@@ -64,7 +64,7 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
          .setColor(0xff9900)
          . setFooter ( "Konosuba ©" )
          . addField ( "Serveur",
-           "Ehh... D'accord *sert un verre de bière a ${message.author.username}* voici ^^ " )
+           `Ehh... D'accord *sert un verre de bière a ${message.author.username}* voici ^^ ` )
          
          
          message.channel.send({embed});
