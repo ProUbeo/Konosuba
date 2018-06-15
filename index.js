@@ -32,28 +32,6 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
 
  bot.on('message', message => {
 
-var msgauthor = message.author.id;
-if (message.author.bot)return;
-if(!db.get("xp").find({user: msgauthor}).value()){
-db.get("xp").push({user: msgauthor, xp: 1}).write();   
-}else{
-    var userxpdb = db.get("xp").filter({user: msgauthor}).find('xp').value();
-    console.log(userxpdb);
-    var userxp = Object.values(userxpdb)
-    console.log(userxp)
-    console.log(`Niveau : ${userxp[1]}`)
-    db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1]+= 1}).write();
-}
-    if (message.content === prefix + "xp"){
-        var xp = db.get("xp").filter({user: msgauthor}).find("xp").value()
-        var xpfinal = Object.values(xp);
-        var xp_embed = new Discord.RichEmbed()
-        .setTitle(`Nombre de monstres tués par ${message.author.username}`)
-        .setColor(0xff9900)
-        .addField ("Monstres Tués :",`${xpfinal[1]}`)
-        .setFooter("Konosuba ©")
-        message.channel.send({embed: xp_embed});
-    }
 
 
      if(message.content === "k!help"){
@@ -96,6 +74,11 @@ if(message.content.startsWith("k!carte <@418453389576503297>")){
   if(message.content.startsWith("k!carte <@437883948694241290>")){
     message.channel.send(`Nom : Bubu\nPrenom : Kurama\n compétence : Épéiste\nNiveau : 1`,{
     file:"https://i.pinimg.com/originals/df/2a/4b/df2a4bfda87795de210038b89dc61636.png"
+})
+}
+if(message.content.startsWith("k!carte <@415831269239160832>")){
+    message.channel.send(`Nom : Hakate\nPrenom : Gaaruto\n compétence : Mage\nNiveau : 1`,{
+    file:"https://cdn.discordapp.com/attachments/455346698726801430/457234679653728297/JPEG_20180613_152647.jpg"
 })
 }
 if(message.content.startsWith("k!carte <@234368202379886593>")){
