@@ -1,6 +1,11 @@
 const Discord = require('discord.js');
- const bot = new Discord.Client();
- 
+const bot = new Discord.Client();
+const low = require('lowdb')
+const FileSync = require('lowdb/adapters/FileSync')
+const adapter = new FileSync('database.json')
+const db = low(adapter)
+db.defaults({ histoires: [], xp: []}).write()
+
  var prefix = ("k!")
  var randnum = 0;
  
@@ -23,9 +28,34 @@ member.guild.channels.find("name", "discution-nouveaux").send(`${member}, je te 
         var role = member.guild.roles.find('name', '1ere connexion');
     member.addRole(role)
     })
- 
+
 
  bot.on('message', message => {
+
+var msgauthor = message.author.id;
+if (message.author.bot)return;
+if(!db.get("xp").find({user: msgauthor}).value()){
+db.get("xp").push({user: msgauthor, xp: 1}).write();   
+}else{
+    var userxpdb = db.get("xp").filter({user: msgauthor}).find('xp').value();
+    console.log(userxpdb);
+    var userxp = Object.values(userxpdb)
+    console.log(userxp)
+    console.log(`Niveau : ${userxp[1]}`)
+    db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1]+= 1}).write();
+}
+    if (message.content === prefix + "xp"){
+        var xp = db.get("xp").filter({user: msgauthor}).find("xp").value()
+        var xpfinal = Object.values(xp);
+        var xp_embed = new Discord.RichEmbed()
+        .setTitle(`Nombre de monstres tués par ${message.author.username}`)
+        .setColor(0xff9900)
+        .addField ("Monstres Tués :",`${xpfinal[1]}`)
+        .setFooter("Konosuba ©")
+        message.channel.send({embed: xp_embed});
+    }
+
+
      if(message.content === "k!help"){
  
          const embed = new Discord.RichEmbed()
