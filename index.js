@@ -181,12 +181,12 @@ if(message.content === "k!teste"){
             message.channel.send(`**${message.author.username}** fait apparaître un teste !`,{
             file:"https://ih1.redbubble.net/image.14778725.5688/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u3.jpg"
         })}
-        else 
+        else
     message.channel.send(`**${message.author.username}** a oublier un truc !`,{
         file:"https://i.paigeeworld.com/user-media/1477785600000/577051e1777e99162683eb41_5815402246705b5d2a0e122c_320.jpg"
-    })
-}
-    else
+    })}
+else
+
         message.channel.send("tu est pas le créateur");{
             message.channel.send(`tu n'est pas le créateur`,{
                 file:"http://1.bp.blogspot.com/-45wb-emSlEM/TggFAb-44hI/AAAAAAAAAhg/DaXtkwQg6O8/s1600/freak+out.jpg"
@@ -194,9 +194,7 @@ if(message.content === "k!teste"){
     }
 
 
-
-
-
+    
 if(message.content.startsWith("k!arc")){
     message.channel.send(`**${message.author.username}** fait apparaître son arc !`,{
     file:"http://img4.hostingpics.net/pics/484588arc.png"
