@@ -192,7 +192,7 @@ message.channel.send(`aucun teste en cours`);
 }
 
 if(message.content === "k!teste"){
-    if("234368202379886593".includes(message.author.id)){
+    if("234368202379886593 323807479651631104".includes(message.author.id)){
         if(teste == true){ 
             message.channel.send(`**${message.author.username}** fait apparaître un teste !`,{
             file:"https://ih1.redbubble.net/image.14778725.5688/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u3.jpg"
