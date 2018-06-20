@@ -175,7 +175,19 @@ if(message.content.startsWith("k!sceptre")){
     file:"https://i.skyrock.net/4010/71994010/pics/3154696378_1_6_CYLmvdbs.png"
 })
 }
+if(message.content === "k!teste true"){
+if(teste == false){
+    message.reply("teste lancer")
+    teste = true;
+}
+}
 
+if(message.content === "k!teste false"){
+if(teste == true){
+    message.reply("teste areter")
+    teste = false;
+}
+}
 
 if(message.content === "k!teste"){
     if("234368202379886593".includes(message.author.id)){
