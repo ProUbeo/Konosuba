@@ -186,7 +186,8 @@ if(message.content === "k!teste"){
                 file:"https://i.paigeeworld.com/user-media/1477785600000/577051e1777e99162683eb41_5815402246705b5d2a0e122c_320.jpg"
             })}
     }
-else   
+}
+else{
             message.channel.send(`tu n'est pas le créateur`,{
                 file:"http://1.bp.blogspot.com/-45wb-emSlEM/TggFAb-44hI/AAAAAAAAAhg/DaXtkwQg6O8/s1600/freak+out.jpg"
             })}
