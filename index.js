@@ -179,7 +179,7 @@ if(message.content === "k!teste true"){
 if(teste == false){
     message.reply("teste lancer")
     teste = true;
-}
+}else
 message.channel.send(`un teste est deja en cours`);
 }
 
