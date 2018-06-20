@@ -180,13 +180,15 @@ if(teste == false){
     message.reply("teste lancer")
     teste = true;
 }
+message.channel.send(`un teste est deja en cours`);
 }
 
 if(message.content === "k!teste false"){
 if(teste == true){
     message.reply("teste areter")
     teste = false;
-}
+}else
+message.channel.send(`aucun teste en cours`);
 }
 
 if(message.content === "k!teste"){
